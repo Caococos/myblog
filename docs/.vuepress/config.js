@@ -300,7 +300,7 @@ module.exports = {
         choosen: 'gitalk',
         options: {
           clientID: 'bfb244d48499500d8d7e',
-          clientSecret: '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',
+          clientSecret: 'a0fdaaafba2f7aa800734e942397db7159b89e37',
           repo: 'myblog', // GitHub 仓库
           owner: 'caococos', // GitHub仓库所有者
           admin: ['caococos'], // 对仓库有写权限的人
