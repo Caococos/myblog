@@ -123,11 +123,11 @@ module.exports = {
       // 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
       // 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
       // 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
-      'https://cdn.jsdelivr.net/gh/caococos/resource-set@v1.1.0/img/mmexport1629942384585(1).jpg',
+      'https://cdn.jsdelivr.net/gh/caococos/resource-set@master/img/nicefoot.jpg',
       'https://cdn.jsdelivr.net/gh/caococos/resource-set@v1.1.0/img/wallpaper1.png',
       'https://cdn.jsdelivr.net/gh/caococos/resource-set@v1.1.0/img/cover1.png'
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
-    bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
+    bodyBgImgOpacity: 0.8, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
@@ -157,7 +157,7 @@ module.exports = {
     blogger: {
       avatar: 'https://cdn.jsdelivr.net/gh/caococos/resource-set@v1.1.0/img/avatar.jpg',
       name: 'Zhihaot1',
-      slogan: '前端界的小学生',
+      slogan: '唯爱与双马尾不可辜负！',
     },
 
     // 社交图标，显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social
@@ -167,7 +167,7 @@ module.exports = {
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com',
+          link: 'mailto:zhihaot1@qq.com',
         },
         {
           iconClass: 'icon-github',
@@ -177,7 +177,7 @@ module.exports = {
         {
           iconClass: 'icon-erji',
           title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
+          link: 'https://music.163.com/#/user/home?id=507122961',
         },
       ],
     },
