@@ -119,12 +119,15 @@ module.exports = {
     // archive: false, // 是否打开归档功能，默认true
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
-    // bodyBgImg: [
-    //   'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
-    //   'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
-    //   'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
-    // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
-    // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
+    bodyBgImg: [
+      // 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
+      // 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
+      // 'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
+      'https://cdn.jsdelivr.net/gh/caococos/resource-set@v1.1.0/img/mmexport1629942384585(1).jpg',
+      'https://cdn.jsdelivr.net/gh/caococos/resource-set@v1.1.0/img/wallpaper1.png',
+      'https://cdn.jsdelivr.net/gh/caococos/resource-set@v1.1.0/img/cover1.png'
+    ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
+    bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
@@ -152,8 +155,8 @@ module.exports = {
 
     // 博主信息，显示在首页侧边栏
     blogger: {
-      avatar: '/img/avatar.jpg',
-      name: 'Evan Xu',
+      avatar: 'https://cdn.jsdelivr.net/gh/caococos/resource-set@v1.1.0/img/avatar.jpg',
+      name: 'Zhihaot1',
       slogan: '前端界的小学生',
     },
 
