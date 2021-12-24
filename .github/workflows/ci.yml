@@ -12,49 +12,49 @@ env: # 设置环境变量
   TZ: Asia/Shanghai # 时区（设置时区可使页面中的`最近更新时间`使用时区时间）
 
   # 任务
-jobs:
-  build-and-deploy:
-    # 服务器环境：最新版 Ubuntu
-    runs-on: ubuntu-latest
-    steps:
-      # 拉取代码
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-
-      # 生成静态文件
-      - name: Build
-        run: npm install && npm run build
-
-      # 部署到 GitHub Pages
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: master
-          FOLDER: docs/.vuepress/dist
-
 # jobs:
-#   build: # 自定义名称
-#     runs-on: ubuntu-latest # 运行在虚拟机环境ubuntu-latest
-
-#     strategy:
-#       matrix:
-#         node-version: [12.x]
-
+#   build-and-deploy:
+#     # 服务器环境：最新版 Ubuntu
+#     runs-on: ubuntu-latest
 #     steps:
-#       - name: Checkout # 步骤1
-#         uses: actions/checkout@v1 # 使用的动作。格式：userName/repoName。作用：检出仓库，获取源码。 官方actions库：https://github.com/actions
-#       - name: Use Node.js ${{ matrix.node-version }} # 步骤2
-#         uses: actions/setup-node@v1 # 作用：安装nodejs
+#       # 拉取代码
+#       - name: Checkout
+#         uses: actions/checkout@v2
 #         with:
-#           node-version: ${{ matrix.node-version }} # 版本
-#       - name: run deploy.sh # 步骤3
-#         env: # 设置环境变量
-#           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-#           # CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
-#         run: npm install && npm run deploy
+#           persist-credentials: false
+
+#       # 生成静态文件
+#       - name: Build
+#         run: npm install && npm run build
+
+#       # 部署到 GitHub Pages
+#       - name: Deploy
+#         uses: JamesIves/github-pages-deploy-action@releases/v3
+#         with:
+#           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#           BRANCH: master
+#           FOLDER: docs/.vuepress/dist
+
+jobs:
+  build: # 自定义名称
+    runs-on: ubuntu-latest # 运行在虚拟机环境ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - name: Checkout # 步骤1
+        uses: actions/checkout@v1 # 使用的动作。格式：userName/repoName。作用：检出仓库，获取源码。 官方actions库：https://github.com/actions
+      - name: Use Node.js ${{ matrix.node-version }} # 步骤2
+        uses: actions/setup-node@v1 # 作用：安装nodejs
+        with:
+          node-version: ${{ matrix.node-version }} # 版本
+      - name: run deploy.sh # 步骤3
+        env: # 设置环境变量
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
+          # CODING_TOKEN: ${{ secrets.CODING_TOKEN }}
+        run: npm install && npm run deploy
 
       # - name: Build and Deploy # 步骤3 （只提交到github可以使用这个步骤）
       #   uses: JamesIves/github-pages-deploy-action@master # 作用：将项目构建和部署到github。 https://github.com/JamesIves/github-pages-deploy-action
