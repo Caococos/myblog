@@ -20,7 +20,7 @@ cd docs/.vuepress/dist
   githubUrl=https://Caococos:${GITHUB_TOKEN}@github.com/Caococos/myblog.git
   git config --global user.name "Caococos"
   git config --global user.email "493524674@qq.com"
-fi
+# fi
 git init
 git add -A
 git commit -m "${msg}"
