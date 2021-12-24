@@ -13,6 +13,7 @@ cd docs/.vuepress/dist
 #echo 'b.xugaoyi.com' > CNAME
 git remote -v
 git remote set-url origin git@github.com:Caococos/myblog.git
+git credential-manager uninstall
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:Caococos/myblog.git
