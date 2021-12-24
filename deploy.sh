@@ -11,9 +11,7 @@ cd docs/.vuepress/dist
 
 # deploy to github pages
 #echo 'b.xugaoyi.com' > CNAME
-git remote -v
-git remote set-url origin git@github.com:Caococos/myblog.git
-git credential-manager uninstall
+
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
   githubUrl=git@github.com:Caococos/myblog.git
@@ -22,6 +20,7 @@ else
   githubUrl=https://Caococos:${GITHUB_TOKEN}@github.com/Caococos/myblog.git
   git config --global user.name "Caococos"
   git config --global user.email "493524674@qq.com"
+  git config --global user.password ${GITHUB_TOKEN}
 fi
 git init
 git add -A
