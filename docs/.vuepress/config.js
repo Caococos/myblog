@@ -127,8 +127,8 @@ module.exports = {
       // 'https://cdn.jsdelivr.net/gh/caococos/resource-set@v1.1.0/img/wallpaper1.png',
       // 'https://cdn.jsdelivr.net/gh/caococos/resource-set@v1.1.0/img/cover1.png'
       'https://cdn.jsdelivr.net/gh/caococos/resource-set@master/img/nicefoot.jpg',
-      'https://cdn.jsdelivr.net/gh/caococos/resource-set@master/img/u_and_m.jpg',
-      'https://cdn.jsdelivr.net/gh/caococos/resource-set@master/img/ling.jpg'
+      'https://cdn.jsdelivr.net/gh/caococos/resource-set@master/img/Horizontal_Screen/冰菓cp.jpg',
+      'https://cdn.jsdelivr.net/gh/caococos/resource-set@master/img/Horizontal_Screen/ling.jpg'
     ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时每隔15秒换一张。
     bodyBgImgOpacity: 0.8, // body背景图透明度，选值 0 ~ 1.0, 默认0.5
 
